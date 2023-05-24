@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.DEBUG)
 
 # Keep in sync with pyproject.toml
-CYTHON_VERSION_MIN = "0.29.30"
+CYTHON_VERSION_MIN = "0.29.28"
 
 SLURM_RELEASE = "23.2"
 PYSLURM_PATCH_RELEASE = "1"
