@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+# export DH_VERBOSE=1
+
+export PYBUILD_NAME=pyslurm
+export PYBUILD_DISABLE=test
+export SLURM_LIB_DIR=/usr/lib/$(DEB_BUILD_GNU_TYPE)
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild

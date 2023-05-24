@@ -1,0 +1,15 @@
+Source: python-pyslurm
+Priority: optional
+Maintainer: Eric Le Lay <eric.lelay@idnowwitoutdot.io>
+Section: python
+Build-Depends: debhelper (>= 11), python3-setuptools (>= 0.6), libslurm-dev, cython3 (>= 0.21), python3-all-dev, pybuild-plugin-pyproject, dh-python
+X-Python-Version: >= 3.6
+Standards-Version: 3.9.6
+Homepage: https://pyslurm.github.io
+
+Package: python3-pyslurm
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}
+Description: Python API for slurm
+ This package provide a Python API for slurm
+ that can be used to contact slurmctld
